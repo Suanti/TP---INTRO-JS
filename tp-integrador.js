@@ -41,11 +41,11 @@ let libros = [ { id:184520 , título:'Los Miserables', autor:'Victor Hugo', año
 // email (string)
 // librosPrestados (array de ids de libros).
 let personas = [
-    { nombre: "Ana", edad: 25, mail: 'anarojas@hotmail.com', librosPrestados = [809740, 182590 ]},
-    { nombre: "Luis", edad: 30, mail:'luiseduardo@hotmail.com', librosPrestados= [634572]},
-    { nombre: "Marta", edad: 22, mail: 'martastuart@gmail.com', librosPrestados=[759374, 609826, 184520] },
-    { nombre: 'Juana', edad: 27, mail: 'juanawerkel@yahoo.com', librosPrestados=[395490, 143652, 809740, 326570]},
-    { nombre: 'José', edad: 34, mail: 'joselucas@gmail.com', librosPrestados=[809740,602530 ]}
+    { nombre: "Ana", edad: 25, mail: 'anarojas@hotmail.com', librosPrestados: [809740, 182590 ]},
+    { nombre: "Luis", edad: 30, mail:'luiseduardo@hotmail.com', librosPrestados: [634572]},
+    { nombre: "Marta", edad: 22, mail: 'martastuart@gmail.com', librosPrestados: [759374, 609826, 184520] },
+    { nombre: 'Juana', edad: 27, mail: 'juanawerkel@yahoo.com', librosPrestados:[395490, 143652, 809740, 326570]},
+    { nombre: 'José', edad: 34, mail: 'joselucas@gmail.com', librosPrestados: [809740,602530 ]}
   ];
 // 2. Funciones de Gestión de Libros
 // Implementar una función agregarLibro(id, titulo, autor, anio, genero) que agregue un nuevo libro al array libros.
@@ -55,6 +55,7 @@ let personas = [
 // Desarrollar una función ordenarLibros(criterio) que ordene los libros por título o año utilizando el algoritmo de ordenamiento burbuja (bubble sort) y luego muestre los libros ordenados en la consola.
 
 // Desarrollar una función borrarLibro(id) que elimine el libro que se le pase por parámetro. 
+
 // 3. Gestión de Usuarios
 // Implementar una función registrarUsuario(nombre, email) que agregue un nuevo usuario al array usuarios. 
 
@@ -74,6 +75,7 @@ let personas = [
 // Cantidad de libros prestados.
 // Cantidad de libros por género.
 // Libro más antiguo y más nuevo
+
 // 6. Identificación Avanzada de libros
 // Implementar una función librosConPalabrasEnTitulo() que identifique y muestre los títulos de los libros que contienen más de una palabra. Además la función debe excluir aquellos títulos que contengan números y/o caracteres especiales. Por último mostrar en la consola el array resultante. 
 
@@ -89,6 +91,7 @@ let personas = [
 // Convertir todos los títulos a mayúsculas.
 // Eliminar espacios en blanco al inicio y final de los nombres de autores.
 // Formatear los emails de los usuarios a minúsculas.
+
 // 9. Interfaz de Usuario por Consola
 // Implementar una función menuPrincipal() que muestre un menú de opciones al usuario y permita interactuar con el sistema utilizando prompt().
 
