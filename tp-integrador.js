@@ -55,12 +55,31 @@ function agregarLibro ( id, titulo , autor, año, género){ libros.push ({id, ti
 
 //B.  Crear una función buscarLibro(criterio, valor) que permita buscar libros por título, autor o género utilizando el algoritmo de búsqueda lineal. 
 
-let valor = prompt("Ingrese título, autor o género a buscar:");
-let criterio = titulo || autor || año 
-let buscarLibro = (criterio, valor ) => libros.filter (valor)
-console.log ( buscarLibro)
+let criterio = prompt("Ingrese su criterio de busqueda: título, autor o género");
+let valor = prompt("Ingrese el titulo, autor o género");
+
+function buscarLibro(criterio, valor) {
+  return libros.filter(libro => libro[criterio].toLowerCase().includes(valor.toLowerCase()));
+}
+let resultados = buscarLibro(criterio, valor);
+console.log(resultados);
+
 //C.  Desarrollar una función ordenarLibros(criterio) que ordene los libros por título o año utilizando el algoritmo de ordenamiento burbuja (bubble sort) y luego muestre los libros ordenados en la consola.
 
+let criterio2 = prompt("Ingrese su criterio de busqueda: título o año ");
+function ordenarLibros(criterio2) {
+  for (let i = 0; i < libros.length - 1; i++) {
+    for (let j = 0; j < libros.length - 1 - i; j++) {
+      if (libros[j][criterio2] > libros[j + 1][criterio2]) {
+        // Intercambio de objetos
+        let temp = libros[j];
+        libros[j] = libros[j + 1];
+        libros[j + 1] = temp; } }}
+
+  // Mostrar libros ordenados
+  console.log(`Libros ordenados por ${criterio}:`);
+  console.log(libros);
+}
 //A.  Desarrollar una función borrarLibro(id) que elimine el libro que se le pase por parámetro. 
 
 // 3. Gestión de Usuarios
