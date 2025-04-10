@@ -48,13 +48,20 @@ let personas = [
     { nombre: 'José', edad: 34, mail: 'joselucas@gmail.com', librosPrestados: [809740,602530 ]}
   ];
 // 2. Funciones de Gestión de Libros
-// Implementar una función agregarLibro(id, titulo, autor, anio, genero) que agregue un nuevo libro al array libros.
+// A. Implementar una función agregarLibro(id, titulo, autor, anio, genero) que agregue un nuevo libro al array libros.
 
-// Crear una función buscarLibro(criterio, valor) que permita buscar libros por título, autor o género utilizando el algoritmo de búsqueda lineal. 
+let agregarlibro = prompt('ingrese el libro a agregar')
+function agregarLibro ( id, titulo , autor, año, género){ libros.push ({id, titulo , autor, año, género});}
 
-// Desarrollar una función ordenarLibros(criterio) que ordene los libros por título o año utilizando el algoritmo de ordenamiento burbuja (bubble sort) y luego muestre los libros ordenados en la consola.
+//B.  Crear una función buscarLibro(criterio, valor) que permita buscar libros por título, autor o género utilizando el algoritmo de búsqueda lineal. 
 
-// Desarrollar una función borrarLibro(id) que elimine el libro que se le pase por parámetro. 
+let valor = prompt("Ingrese título, autor o género a buscar:");
+let criterio = titulo || autor || año 
+let buscarLibro = (criterio, valor ) => libros.filter (valor)
+console.log ( buscarLibro)
+//C.  Desarrollar una función ordenarLibros(criterio) que ordene los libros por título o año utilizando el algoritmo de ordenamiento burbuja (bubble sort) y luego muestre los libros ordenados en la consola.
+
+//A.  Desarrollar una función borrarLibro(id) que elimine el libro que se le pase por parámetro. 
 
 // 3. Gestión de Usuarios
 // Implementar una función registrarUsuario(nombre, email) que agregue un nuevo usuario al array usuarios. 
